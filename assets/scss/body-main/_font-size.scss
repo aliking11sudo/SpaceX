@@ -1,0 +1,29 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  box-sizing: inherit;
+  list-style: none;
+transition: all;
+animation: loader 1s ;
+color: #fff;
+}
+body{
+    box-sizing: border-box;
+}
+html {
+    font: 14px/28px D-DIN-Bold,Arial,Verdana,sans-serif;
+    font-style: normal;
+  font-weight: 700;
+  font-size: 62.5%;
+}
+@keyframes loader {
+0%{
+    opacity: 0;
+}
+100%{
+    opacity: 1;
+}
+}

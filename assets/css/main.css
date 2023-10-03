@@ -1,0 +1,321 @@
+/* developed by ali edfandani */
+
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  box-sizing: inherit;
+  list-style: none;
+  transition: all;
+  animation: loader 1s;
+  color: #fff;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+html {
+  font: 14px/28px D-DIN-Bold, Arial, Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 62.5%;
+}
+
+@keyframes loader {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.navbar {
+  width: 100%;
+  height: 10vh;
+  position: sticky;
+  top: auto;
+}
+
+.logo {
+  margin-left: 2rem;
+  width: 21rem;
+  height: 3rem;
+  filter: invert(100%);
+}
+
+.svg-icon {
+  width: 2.5em;
+  height: 2.5em;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #ffffff;
+}
+
+.navbar--list {
+  margin-right: 10rem;
+  margin-top: 1rem;
+  list-style: none !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 62%;
+}
+
+.nav--link {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  justify-content: space-between;
+}
+
+.nav--list-li {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  color: #fff;
+  display: flex;
+  position: relative;
+  --primary-color: #111;
+  --hovered-color: #ffffff;
+}
+
+.nav--list-li::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 0;
+  top: 2rem;
+  background: var(--hovered-color);
+  height: 1px;
+  transition: 0.2s ease-out;
+}
+
+.nav--list-li:hover::after {
+  width: 100%;
+}
+
+.nav_end_list {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  color: #fff;
+  margin-top: 1rem;
+  list-style: none !important;
+  display: flex;
+  width: 10%;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media only screen and (max-width: 1200px) {
+  .nav--list-li {
+    display: none;
+  }
+  .navbar {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .svg-icon {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .nav--list-li {
+    display: none;
+  }
+  .navbar {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .svg-icon {
+    display: none;
+  }
+}
+.section_one {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 100vh;
+  padding: 3rem 4rem;
+  justify-content: end;
+  background-color: black;
+  background-image: url("https://sxcontent9668.azureedge.us/cms-assets/assets/Star6_19_092923_DSC_8052_3_desktop_e1c637e394.jpg");
+}
+
+.section_one-text {
+  margin-left: 2rem;
+  margin-top: 49vh;
+  position: absolute;
+}
+.section_one-text .h1 {
+  font-weight: 100;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.section_one-text .h2 {
+  font-weight: 700;
+  font-size: 4rem;
+}
+
+.section_one-btn {
+  position: relative;
+  display: inline-block;
+  padding: 1.2rem 3.2rem;
+  margin-top: 3rem;
+  text-decoration: none;
+  font-weight: 900;
+  text-align: center;
+  font-size: 1.2rem;
+  border-width: 0.2rem;
+  border-style: solid;
+  border-color: #fff;
+  --primary-color: #000000;
+  --hovered-color: #ffffff;
+  z-index: 1;
+}
+
+.section_one-btn::after {
+  position: absolute;
+  content: "";
+  height: 0;
+  left: 0;
+  bottom: 0;
+  color: #000000;
+  background: var(--hovered-color);
+  width: 100%;
+  z-index: -1;
+  transition: 0.2s all ease-out;
+}
+
+.section_one-btn:hover::after {
+  height: 100%;
+  top: 0;
+}
+
+.section_one-btn:hover {
+  color: #000000;
+}
+
+@media only screen and (max-width: 600px) {
+  .section_one {
+    padding: 1rem 1.1rem;
+  }
+  .section_one-text .h1 {
+    font-size: 1.5rem;
+  }
+  .section_one-text .h2 {
+    font-size: 2rem;
+  }
+}
+.nav-more {
+  direction: rtl;
+  display: none;
+  width: 20%;
+  height: 100vh;
+  letter-spacing: 0.3rem;
+  font-size: 1.3rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding-top: 5rem;
+  background-color: #000000;
+  float: right;
+  text-align: right;
+  z-index: 4;
+}
+
+.navmore--list-li {
+  border-bottom-color: #fff;
+  border-bottom-width: 0.2rem;
+  border-bottom-style: solid;
+  margin-top: 3rem;
+  padding: 0;
+}
+
+.navmore--list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.close {
+  margin-bottom: 2rem;
+  margin-right: 2rem;
+}
+
+.section-tow {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 95vh;
+  justify-content: end;
+  background-image: url("https://sxcontent9668.azureedge.us/cms-assets/assets/Starlink_G7_3_OS_56_5196_Desktop_501dcd8c6a.jpg");
+  padding: 3rem 4rem;
+  box-sizing: border-box;
+}
+
+.section-third {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 95vh;
+  padding: 3rem 4rem;
+  justify-content: end;
+  background-color: black;
+  background-image: url(" https://sxcontent9668.azureedge.us/cms-assets/assets/Crew_6_Desktop_9857f5c2f0.jpg");
+}
+
+.section-fourth {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 95vh;
+  padding: 3rem 4rem;
+  justify-content: end;
+  background-color: black;
+  background-image: url(" https://sxcontent9668.azureedge.us/cms-assets/assets/STARSHIP_Testflight_DESKTOP_2b3bea613a.jpg");
+}
+
+footer {
+  background-color: black;
+  height: 9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-txt {
+  text-decoration: none;
+  width: 23%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-linkes {
+  text-decoration: none;
+  font-weight: 900;
+}
+
+/*# sourceMappingURL=main.css.map */

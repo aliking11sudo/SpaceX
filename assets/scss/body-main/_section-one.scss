@@ -1,0 +1,111 @@
+.section_one{
+     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    height: 100vh;
+    padding: 3rem 4rem;
+    justify-content: end;
+    background-color: black;
+    background-image: url("https://sxcontent9668.azureedge.us/cms-assets/assets/Star6_19_092923_DSC_8052_3_desktop_e1c637e394.jpg");
+   
+}
+.section_one-text {
+  margin-left: 2rem;
+  margin-top: 49vh;
+
+  position: absolute;
+  & .h1 {
+    font-weight: 100;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  & .h2 {
+    font-weight: 700;
+    font-size: 4rem;
+  }
+}
+.section_one-btn {
+  position: relative;
+  display: inline-block;
+  padding: 1.2rem 3.2rem;
+  margin-top: 3rem;
+  text-decoration: none;
+  font-weight: 900;
+  text-align: center;
+  font-size: 1.2rem;
+  border-width: 0.2rem;
+  border-style: solid;
+  border-color: #fff;
+  --primary-color: #000000;
+  --hovered-color: #ffffff;
+  z-index: 1;
+}
+.section_one-btn::after {
+  position: absolute;
+  content: "";
+  height: 0;
+  left: 0;
+  bottom: 0;
+  color: #000000;
+  background: var(--hovered-color);
+  width: 100%;
+  z-index: -1;
+  transition: 0.2s all ease-out;
+}
+.section_one-btn:hover::after {
+  height: 100%;
+  top: 0;
+}
+.section_one-btn:hover {
+  color: #000000;
+}
+@media only screen and (max-width: 600px){
+    .section_one{
+        padding: 1rem 1.1rem;
+    }
+  .section_one-text{
+    
+    & .h1{
+        font-size: calc(1.5rem);
+    }
+    & .h2{
+        font-size: calc(2rem);
+    }
+  }
+    }
+.nav-more{
+    direction: rtl;
+    display: none;
+width: 20%;
+height: 100vh;
+letter-spacing: .3rem;
+ font-size: 1.3rem;
+ position: absolute;
+ right: 0;
+ top: 0;
+ padding-top: 5rem;
+background-color: #000000;
+    float: right;
+    text-align: right;
+
+    z-index: 4;
+}
+.navmore--list-li{
+    
+    border-bottom-color: #fff;
+border-bottom-width: .2rem;
+border-bottom-style: solid;
+margin-top:3rem ;
+padding: 0;
+}
+.navmore--list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.close{
+ 
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+}

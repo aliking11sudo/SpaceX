@@ -1,0 +1,20 @@
+footer{
+    background-color: black;
+    height: 9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-txt{
+    text-decoration: none;
+    width: 23%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-linkes{
+    text-decoration: none;
+    font-weight: 900;
+}
+
+
